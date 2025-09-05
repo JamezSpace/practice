@@ -1,0 +1,38 @@
+{
+    "name": "practice",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build-all": "tsc",
+        "preexpress-server": "tsc",
+        "express-server": "node --env-file=.env built/index.express.js",
+        "express-dev": "ts-node index.express.ts",
+        "fastify-dev": "ts-node index.fastify.ts"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/JamezSpace/practice.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/JamezSpace/practice/issues"
+    },
+    "homepage": "https://github.com/JamezSpace/practice#readme",
+    "devDependencies": {
+        "@types/bcrypt": "^6.0.0",
+        "@types/express": "^5.0.3",
+        "@types/jsonwebtoken": "^9.0.10",
+        "@types/mongodb": "^4.0.6",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.9.2"
+    },
+    "dependencies": {
+        "bcrypt": "^6.0.0",
+        "express": "^5.1.0",
+        "jsonwebtoken": "^9.0.2",
+        "mongodb": "^6.19.0"
+    }
+}
